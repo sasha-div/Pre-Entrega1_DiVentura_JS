@@ -11,7 +11,7 @@ const SALIR = 'ESC'
 let direccion
 let quienSoy
 
-// Do While para que el juego inicie mientras el valor que ingrese el usuario sea distinto a "ESC"
+// Do While para que el juego inicie mientras el valor que ingrese el usuario sea distinto a "ESC". Dentro del Switch está el condicional if else
 
 do {
     direccion = prompt('Estás en un edificio antiguo, polvoriento, oscuro y que apenas se mantiene en pie. La única fuente de luz se proyecta en una pared desde tu linterna, que nunca te ha fallado... Ojalá no se le ocurra empezar a hacerlo ahora.' + '\n' + '\n' +
@@ -44,7 +44,7 @@ do {
                     alert('Con un ruido retumbante, las paredes comienzan a temblar, sacudiéndose el polvo. Sientes el movimiento en los pies y, de pronto, el suelo empieza a derrumbarse, llevándote con él quién sabe a dónde...' + '\n' + '\n' + 'Continuará...')
                 }
             default:
-                alert('Vuelve a intentarlo.')
+                alert('¡Vuelve a intentarlo!')
         }
     } else {
         alert('¡Vuelve pronto!');
