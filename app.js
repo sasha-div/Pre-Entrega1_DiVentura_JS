@@ -4,7 +4,7 @@ const ADELANTE = 'ad'
 const ATRAS = 'at'
 const DERECHA = 'de'
 const IZQUIERDA = 'iz'
-const SALIR = 'ESC'
+const SALIR = 'salir'
 
 // Variables para la dirección que tomará y la pregunta "¿Quién soy?"
 
@@ -20,9 +20,9 @@ do {
         'Atrás: "at"' + '\n' +
         'Derecha: "de"' + '\n' +
         'Izquierda: "iz"' + '\n' +
-        'Salir del juego: "ESC"' + '\n' + '\n' +
+        'Salir del juego: "salir"' + '\n' + '\n' +
 
-        '¿Cuál camino quieres tomar?');
+        '¿Cuál camino quieres tomar?').toLowerCase();
 
     if (direccion != SALIR) {
 
@@ -37,7 +37,7 @@ do {
                 alert('Caminas un buen tramo y descubres una nota arrugada y envejecida sobre una mesa que por suerte tu linterna reveló. Con mucho esfuerzo se puede leer lo siguiente:' + '\n' + '\n' + '"Sin mí, no puedes ver la luz del día, pero si me miras directamente, me alejaré. Soy la clave para salir de aquí..."' + '\n' + '\n' + 'No puedes hacer nada con esta información aquí. Será mejor volver...')
                 break
             case IZQUIERDA:
-                quienSoy = prompt('Atraviesas un pasillo largo y tétrico, tratando de ignorar los sonidos extraños que provienen del alcantarillado. Al final, encuentras un espejo empañado... Alguien acaba de escribir sobre él.' + '\n' + '\n' + 'Parece que quiere una respuesta...' + '\n' + '\n' + '¿Quién soy?')
+                quienSoy = prompt('Atraviesas un pasillo largo y tétrico, tratando de ignorar los sonidos extraños que provienen del alcantarillado. Al final, encuentras un espejo empañado... Alguien acaba de escribir sobre él.' + '\n' + '\n' + 'Parece que quiere una respuesta...' + '\n' + '\n' + '¿Quién soy?').toLowerCase();
                 if (quienSoy != 'sombra') {
                     alert('No tuvo efecto la palabra que escribiste. Quizás puedas encontrar algo más tomando otro camino o volviendo a revisar la información que tienes ahora.')
                 } else {
